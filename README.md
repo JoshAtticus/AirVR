@@ -1,15 +1,10 @@
-> ** This repository is no longer maintained.**  
-Latest version is developed by alvr-org origanization. Check [https://github.com/alvr-org/ALVR](https://github.com/alvr-org/ALVR)
+# AirVR
 
-# ALVR - Air Light VR
-
-ALVR is an open source remote VR display for Gear VR and Oculus Go/Quest. With it, you can play SteamVR games in your standalone headset.
-
-English | [Japanese](https://github.com/polygraphene/ALVR/blob/master/README-ja.md)
+AirVR is an open source remote VR display for Gear VR and Oculus Go/Quest. With it, you can play SteamVR games in your standalone headset.
 
 ## Discord server
 
-Check the latest new about ALVR in [Discord server](https://discord.gg/KbKk3UM)
+Check the latest new about AirVR in [Discord server](https://discord.gg/KbKk3UM)
 
 ## This repository is no longer maintained
 
@@ -18,29 +13,45 @@ This repository is not maintained for a long time.
 Fork version is actively developed on the following repository.
 Go is now supported on the repository as well as Quest/Quest2.
 
-[https://github.com/alvr-org/ALVR](https://github.com/alvr-org/ALVR)
+[https://github.com/AirVR-org/AirVR](https://github.com/AirVR-org/AirVR)
 
 For GearVR users: You can get unmaintained version on this repository (See below).
 
 ## Description
 
-ALVR streams VR display output from your PC to Gear VR / Oculus Go / Oculus Quest via Wi-Fi. This is similar to Riftcat or Trinus VR, but our purpose is optimization for Gear VR. ALVR provides smooth head-tracking compared to other apps in a Wi-Fi environment using Asynchronous Timewarp.
+AirVR streams VR display output from your PC to Gear VR / Oculus Go / Oculus Quest via Wi-Fi. This is similar to Riftcat or Trinus VR, but our purpose is optimization for Gear VR. AirVR provides smooth head-tracking compared to other apps in a Wi-Fi environment using Asynchronous Timewarp.
 
 Note that many PCVR games require 6DoF controller or multiple buttons, so you might not able to play those games.
-You can find playable games in [List of tested VR games and experiences](https://github.com/polygraphene/ALVR/wiki/List-of-tested-VR-games-and-experiences).
+You can find playable games in [List of tested VR games and experiences](https://github.com/JoshAtticus/AirVR/wiki/List-of-tested-VR-games-and-experiences).
 
 ## Requirements
 
-ALVR requires any of the following devices:
+AirVR requires any of the following headsets:
 
-- Gear VR
-- Oculus Go
-- Oculus Quest
+- Gear VR (SM-R325)
+- Gear VR (SM-R324)
+
+Controllers:
+- ET-YO324 (Gear VR controller 1st Generation)
+
+And phones:
+
+- Galaxy S6 / S6 Edge
+- Galaxy S7
+- Galaxy S8 / S8+
+- Galaxy S9 / S9+
+- Galaxy Note 8
+
+The following devices should work but are untested
+
+- Galaxy S7 Edge
+- Galaxy Note5
+- Galaxy Note9
+- Galaxy S10 / S10+
+
 
 |Device|Working?|
 |---|---|
-|Oculus Quest|OK(alpha)|
-|Oculus Go|OK|
 |GalaxyS9/S9+|OK|
 |GalaxyS8/S8+|OK|
 |Galaxy Note 8|OK|
@@ -48,7 +59,7 @@ ALVR requires any of the following devices:
 |GalaxyS6(Edge)|OK|
 
 - High-end gaming PC
-    - with NVIDIA GPU which supports NVENC ([Supported GPUs](https://github.com/polygraphene/ALVR/wiki/Supported-GPU))
+    - with NVIDIA GPU which supports NVENC ([Supported GPUs](https://github.com/JoshAtticus/AirVR/wiki/Supported-GPU))
     - (or with AMD GPU which supports AMF VCE)
     - Windows 10 is recommended
     - Currently only NVIDIA GPU is supported on Windows 7
@@ -57,54 +68,30 @@ ALVR requires any of the following devices:
         - You need to connect both to the same router
 - SteamVR
 
-## Install ALVR server for PC
+## Install AirVR server for PC
 
 1. Install SteamVR
-2. Download installer from [Releases](https://github.com/polygraphene/ALVR/releases)
+2. Download installer from [Releases](https://github.com/JoshAtticus/AirVR/releases)
 3. Run the installer
-4. Open ALVR Launcher
-
-## Install ALVR client for headset
-
-### For Quest: Install from apk
-
-- Use [https://github.com/alvr-org/ALVR](https://github.com/alvr-org/ALVR) instead.
-- ~~Need to enable developer option for Quest.~~
-- ~~Download apk from [Releases](https://github.com/polygraphene/ALVR/releases)~~
-- ~~Check [Installation](https://github.com/polygraphene/ALVR/wiki/Installation).~~
-
-### ~~For GearVR and Go: Oculus Store~~
-
-- ~~You can download ALVR Client from Oculus Store with key.~~
-- ~~Open the key distribution page on your smartphone and follow the instruction.~~
-- ALVR is no longer available on Oculus Store. Use apk method instead. See [issue 695](https://github.com/polygraphene/ALVR/issues/695#issuecomment-769342707)
-
-### For GearVR: Install from apk
-
-- It's a very complex method to install and I can't support it. Try [googling](https://www.google.com/search?q=gearvr+osig+apk+sideload) for detail.
-1. Get osig file from oculus website
-2. Install Apk Editor
-3. Download apk from Releases
-4. Open apk and put osig file on assets folder
-5. Build and install
+4. Open AirVR Launcher
 
 ## Usage
 
-- Launch ALVR.exe
+- Launch AirVR.exe
 - Press "Start Server" button or launch VR game
 - SteamVR's small window will appear. You should see a headset icon in the SteamVR status window that looks like a green block with a bold S in the middle
-- Launch ALVR Client in your headset
-- IP Address of headset will appear in the server tab of ALVR.exe
+- Launch AirVR Client in your headset
+- IP Address of headset will appear in the server tab of AirVR.exe
 - Press "Connect" button
 
 ## Troubleshoot
 
-- If you got some error, please check [Troubleshooting](https://github.com/polygraphene/ALVR/wiki/Troubleshooting)
+- If you got some error, please check [Troubleshooting](https://github.com/JoshAtticus/AirVR/wiki/Troubleshooting)
 
 ## Uninstallation
 
 - Execute driver\_uninstall.bat in the driver folder
-- Delete the install folder (ALVR does not use the registry)
+- Delete the install folder (AirVR does not use the registry)
 - If you already deleted the folder without executing driver\_uninstall.bat:
     - Open C:\Users\\%USERNAME%\AppData\Local\openvr\openvrpaths.vrpath and check install directory
     - Execute
@@ -113,41 +100,24 @@ ALVR requires any of the following devices:
 
 ## Future work
 
-- SteamVR dashboard to control ALVR
+- SteamVR dashboard to control AirVR
 - Cloud streaming
 
 ## Build
 
-### ALVR Server and GUI (Launcher)
+### AirVR Server and GUI (Launcher)
 
-- Open ALVR.sln with Visual Studio 2017 and build
-    - alvr\_server project is the driver for SteamVR written in C++
-    - ALVR project is the launcher GUI written in C#
+- Open AirVR.sln with Visual Studio 2017 and build
+    - AirVR\_server project is the driver for SteamVR written in C++
+    - AirVR project is the launcher GUI written in C#
 
-### ALVR Client
+### AirVR Client
 
-- Clone [ALVR Client](https://github.com/polygraphene/ALVRClient)
+- Clone [AirVR Client](https://github.com/JoshAtticus/AirVRClient)
 - Put your [osig file](https://developer.oculus.com/documentation/mobilesdk/latest/concepts/mobile-submission-sig-file/) on assets folder (only for Gear VR)
 - Build with Android Studio
 - Install apk via adb
 
 ## License
 
-ALVR is licensed under MIT License.
-
-## Donate
-
-If you like this project, please donate!
-
-#### Donate by paypal
-
-[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=polygraphene@gmail.com&lc=US&item_name=Donate+for+ALVR+developer&no_note=0&cn=&curency_code=USD&bn=PP-DonationsBF:btn_donateCC_LG.gif:NonHosted)
-If you could not use this link, please try the following.
-1. Login your paypal account
-2. Open "Send and request" tab
-3. Click "Pay for goods or services"
-4. Put "polygraphene@gmail.com" (it is my paypal account) and click next
-
-#### Donate by bitcoin
-
-bitcoin:1FCbmFVSjsmpnAj6oLx2EhnzQzzhyxTLEv
+AirVR is licensed under MIT License.

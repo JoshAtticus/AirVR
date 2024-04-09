@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{EF437C2D-9F33-4A80-985D-FAFD8ABCF304}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>ALVR</RootNamespace>
-    <AssemblyName>ALVR</AssemblyName>
+    <RootNamespace>AirVR</RootNamespace>
+    <AssemblyName>AirVR</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -34,7 +34,7 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>alvr_256.ico</ApplicationIcon>
+    <ApplicationIcon>AirVR_256.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="MetroFramework, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
@@ -95,7 +95,7 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <None Include="packages.config" />
-    <None Include="Properties\DataSources\ALVR.Properties.Settings.datasource" />
+    <None Include="Properties\DataSources\AirVR.Properties.Settings.datasource" />
     <None Include="Properties\DataSources\ServerConfig.datasource" />
     <None Include="Properties\DataSources\ServerConfig.Resolution.datasource" />
     <None Include="Properties\Settings.settings">
@@ -112,9 +112,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="alvr_256.ico" />
+    <Content Include="AirVR_256.ico" />
     <None Include="Resources\LICENSE.txt" />
-    <None Include="Resources\alvr-128.png" />
+    <None Include="Resources\AirVR-128.png" />
     <None Include="Resources\web_hi_res_512.png" />
   </ItemGroup>
   <ItemGroup>
